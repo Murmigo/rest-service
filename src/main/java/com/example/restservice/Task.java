@@ -15,15 +15,6 @@ public class Task {
 	private String priority;
 	
 	
-	/*public Task(Integer id, String description) {
-		super();
-		this.id = id;
-		this.description = description;
-		this.priority = "medium";
-		this.completed = false;
-	}*/
-	
-	
 	public Integer getId() {
 		return id;
 	}
