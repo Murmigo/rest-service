@@ -63,7 +63,6 @@ public class TaskController {
 	public String deleteTask(@PathVariable(value = "id") Integer taskId) {
 		taskRepo.deleteById(taskId);
 		return "Deleted";
-
 	}
 	
 	@GetMapping("/task")
