@@ -13,8 +13,14 @@ public class Task {
 	private String description;	
 	private boolean completed;	
 	private String priority;
+	private String deadline;
 	
-	
+	public String getDeadline() {
+		return deadline;
+	}
+	public void setDeadline(String deadline) {
+		this.deadline = deadline;
+	}
 	public Integer getId() {
 		return id;
 	}

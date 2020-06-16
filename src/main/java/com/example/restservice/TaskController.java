@@ -35,6 +35,7 @@ public class TaskController {
 		myTask.setDescription(t.getDescription());
 		myTask.setPriority(t.getPriority());
 		myTask.setCompleted(false);
+		myTask.setDeadline(t.getDeadline());
 		taskRepo.save(myTask);
 		
 		return "Saved";
@@ -50,6 +51,7 @@ public class TaskController {
 			myTask.setDescription(t.getDescription());
 			myTask.setPriority(t.getPriority());
 			myTask.setCompleted(t.isCompleted());
+			myTask.setDeadline(t.getDeadline());
 			taskRepo.save(myTask);
 			return "Update";
 			
